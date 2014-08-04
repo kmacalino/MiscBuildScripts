@@ -1,0 +1,27 @@
+
+var target = UIATarget.localTarget();
+
+target.frontMostApp().mainWindow().buttons()["LoginKeypad - 1"].tap();
+target.frontMostApp().mainWindow().tap();
+target.frontMostApp().windows()[0].staticTexts().firstWithName("9991").tapWithOptions({tapOffset:{x:0.46, y:0.48}});
+// Alert detected. Expressions for handling alerts should be moved into the UIATarget.onAlert function definition.
+target.frontMostApp().tap();
+target.frontMostApp().mainWindow().scrollViews()[0].staticTexts()["Pre-orders"].scrollToVisible();
+target.frontMostApp().mainWindow().scrollViews()[0].scrollViews()[0].scrollToVisible();
+target.frontMostApp().mainWindow().scrollViews()[0].staticTexts()["Pre-orders"].scrollToVisible();
+target.frontMostApp().mainWindow().scrollViews()[0].staticTexts()["Take-out Orders"].scrollToVisible();
+target.frontMostApp().toolbar().buttons()["Menus"].tap();
+target.frontMostApp().mainWindow().popover().tableViews()["Empty list"].tap();
+target.frontMostApp().mainWindow().scrollViews()[0].scrollViews()[1].staticTexts()["Non-Alcoholic Beverages"].tapWithOptions({tapOffset:{x:0.36, y:0.54}});
+target.frontMostApp().mainWindow().scrollViews()[0].scrollViews()[0].staticTexts()["Coke"].tapWithOptions({tapOffset:{x:0.64, y:0.51}});
+target.frontMostApp().mainWindow().buttons()["Add to Order"].tap();
+target.frontMostApp().mainWindow().buttons()["Payment"].tap();
+// Alert detected. Expressions for handling alerts should be moved into the UIATarget.onAlert function definition.
+target.frontMostApp().alert().cancelButton().tap();
+target.frontMostApp().mainWindow().buttons()[35].tap();
+target.frontMostApp().mainWindow().buttons()[35].tap();
+target.tap({x:649.00, y:383.00});
+target.frontMostApp().navigationBar().leftButton().tap();
+target.tap({x:985.00, y:743.00});
+target.frontMostApp().mainWindow().scrollViews()[0].dragInsideWithOptions({startOffset:{x:0.89, y:0.58}, endOffset:{x:0.40, y:0.60}});
+target.frontMostApp().toolbar().buttons()["  Logout"].tap();
